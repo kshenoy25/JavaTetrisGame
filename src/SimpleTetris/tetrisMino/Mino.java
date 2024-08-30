@@ -5,7 +5,7 @@ import main.PlayManager;
 import java.awt.*;
 
 public class Mino {
-    // super class for all tetrominos
+    // super class for all tetraminos
 
     public Block b[] = new Block[4];
     public Block tempB[] = new Block[4];
@@ -34,8 +34,6 @@ public class Mino {
             b[3].y += Block.SIZE;
             autoDropCounter = 0;
         }
-
-
     }
     public void draw(Graphics2D g2){
         int margin = 2;

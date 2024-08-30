@@ -8,7 +8,7 @@ import java.awt.*;
 
 public class PlayManager {
     // draws the play area
-    // manages tetrominoes
+    // manages tetraminoes
     // handles gameplay actions (deleting lines, adding scores, etc.)
 
     // main play area
@@ -61,7 +61,7 @@ public class PlayManager {
         g2.drawRect(x, y, 200, 200);
         g2.setFont(new Font("Ariel", Font.PLAIN, 30));
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-        g2.drawString("NEXT", x +60, y + 60);
+        g2.drawString("NEXT", x + 60, y + 60);
 
         //draw the currentMino
         if (currentMino != null){
