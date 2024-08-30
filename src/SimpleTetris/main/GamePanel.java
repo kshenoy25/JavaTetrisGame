@@ -1,3 +1,5 @@
+package main;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -15,13 +17,13 @@ public class GamePanel extends JPanel implements Runnable{
             this.setBackground(Color.BLACK);
             this.setLayout(null);
 
+            pm = new PlayManager();
+
         }
         public void launchGame(){
             gameThread = new Thread(this);
             // starting a thread will call the run() method
             gameThread.start();
-
-            pm = new PlayManager();
         }
 
     @Override
@@ -33,8 +35,8 @@ public class GamePanel extends JPanel implements Runnable{
         long currentTime;
 
         while (gameThread != null){
-
             currentTime = System.nanoTime();
+
             delta += (currentTime - lastTime) / drawInterval;
             lastTime = currentTime;
         }
@@ -43,12 +45,12 @@ public class GamePanel extends JPanel implements Runnable{
             repaint();
             delta--;
         }
-
-
     }
+
     private void update(){
         pm.update();
     }
+
     public void paintComponent(Graphics g){
             super.paintComponent(g);
 
