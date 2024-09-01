@@ -39,7 +39,7 @@ public class PlayManager {
         MINO_START_Y = top_y + Block.SIZE;
 
         // set the starting mino
-        currentMino = pickMino()
+        currentMino = pickMino();
         currentMino.setXY(MINO_START_X, MINO_START_Y);
     }
     private Mino pickMino () {
