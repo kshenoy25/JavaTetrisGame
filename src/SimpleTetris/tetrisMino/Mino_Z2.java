@@ -25,7 +25,6 @@ public class Mino_Z2 extends Mino {
         //   o
         //   o o
         //     o
-
         tempB[0].x = b[0].x;
         tempB[0].y = b[0].y;
         tempB[1].x = b[0].x;
