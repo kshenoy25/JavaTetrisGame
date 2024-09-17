@@ -10,6 +10,7 @@ public class Sound {
     URL url[] = new URL[10];
 
     public Sound() {
+        // the sound here is supposed to be a wav but was downloaded as a mp3
         url[0] = getClass().getResource("/white-labyrinth-active.mp3");
         url[1] = getClass().getResource("/delete line.wav");
         url[2] = getClass().getResource("/gameover.wav");
