@@ -1,7 +1,7 @@
 package main;
 
 import javax.swing.*;
-import java.awt.*;
+import java.awt.*; // abstract window toolkit
 import java.awt.event.KeyAdapter;
 
 public class GamePanel extends JPanel implements Runnable{
